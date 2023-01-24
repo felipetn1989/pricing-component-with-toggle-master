@@ -124,7 +124,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--Linear-Gradient2);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -207,6 +207,7 @@ ul {
 .pricing__plans {
   display: grid;
   gap: 2rem;
+  place-content: center;
 }
 
 .pricing__plans h2 {
@@ -221,6 +222,7 @@ ul {
   padding: 1rem 1.5rem;
   color: var(--Grayish-Blue);
   border-radius: 0.875rem;
+  width: 20rem;
 }
 
 .purple {
@@ -296,4 +298,33 @@ ul {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    background-position-x: 65rem;
+  }
+
+  .pricing__plans {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0 11rem;
+    background: url(../images/bg-bottom.svg) no-repeat left bottom;
+  }
+
+  .planInfo {
+    width: unset;
+  }
+
+  .planProfessional {
+    height: 33rem;
+    padding-top: 3rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .planBasic,
+  .planMaster {
+    height: 30rem;
+    place-self: center stretch;
+  }
 }
