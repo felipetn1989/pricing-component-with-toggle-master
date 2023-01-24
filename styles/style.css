@@ -249,6 +249,10 @@ ul {
   font-size: 2.5rem;
 }
 
+.planValue__year {
+  display: none;
+}
+
 .learn {
   background-image: linear-gradient(
     to right,
