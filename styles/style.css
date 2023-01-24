@@ -105,6 +105,10 @@ h6 {
   height: 1.875rem;
 }
 
+.switch:hover {
+  filter: opacity(70%);
+}
+
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
@@ -143,10 +147,6 @@ input:checked + .slider {
     var(--Linear-Gradient1),
     var(--Linear-Gradient2)
   );
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -265,10 +265,24 @@ ul {
   font-size: 0.8125rem;
 }
 
+.learn:hover {
+  background-image: unset;
+  background-color: white;
+  border: 1px solid var(--Linear-Gradient2);
+  color: var(--Linear-Gradient2);
+  cursor: pointer;
+}
+
 .purpleButton {
   background-image: unset;
   background-color: white;
   color: var(--Linear-Gradient2);
+}
+
+.purpleButton:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
 .attribution {
